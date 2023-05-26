@@ -19,3 +19,14 @@ for (let i = 0; i < numbers.length - 1 && count < 5; i++) {
         count++;
     }
 }
+
+/**
+ * 함수형으로 짠 코드
+ */
+console.log(
+  numbers
+    .filter(n => n % 2 === 0) // 짝수
+    .slice(0, 5) // 5개 선택
+    .map(n => Math.pow(n, 2)) // 제곱
+    .join(', ') // 문자열로 합치기
+);
